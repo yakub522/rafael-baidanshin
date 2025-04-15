@@ -230,6 +230,13 @@ nav {
     justify-content: center;
 }
 
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .logo-placeholder {
     width: 60px;
     height: 60px;
@@ -271,11 +278,22 @@ nav {
 }
 
 .achievements {
-    list-style-type: disc;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .achievements li {
+    position: relative;
+    padding-left: 20px;
     margin-bottom: 8px;
+}
+
+.achievements li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #7b68ee;
 }
 
 /* Education Section */
@@ -295,6 +313,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.school-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .education-details h3 {
